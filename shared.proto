@@ -1,0 +1,15 @@
+//! 存入数据库丢失类型信息,使用此文件序列化存储
+
+syntax = "proto3";
+
+package shared;
+
+message Value {
+  oneof ev {
+    string string = 1;
+    bytes binary = 2;
+    sint64 integer = 3;
+    double float = 4;
+    bool bool = 5;
+  }
+}

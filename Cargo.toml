@@ -1,0 +1,34 @@
+[package]
+name = "rbase"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+dashmap = "5"
+futures-util = "0.3"
+net2 = "0.2"
+num_cpus = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.21"
+tower = "0.4"
+tracing = "0.1"
+url = "2"
+anyhow = "1"
+futures-channel = "0.3"
+rand = "0.8"
+sysinfo = "0.30"
+lazy_static = "1"
+redis = "0.24"
+prost = "0.12"
+async-trait = "0.1"
+
+[dev-dependencies]
+clap = { version = "4", features = ["derive"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[build-dependencies]
+prost-build = "0.12"
