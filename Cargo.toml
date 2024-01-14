@@ -25,6 +25,7 @@ lazy_static = "1"
 redis = "0.24"
 prost = "0.12"
 async-trait = "0.1"
+sonyflake = "0.2"
 
 [dev-dependencies]
 clap = { version = "4", features = ["derive"] }
